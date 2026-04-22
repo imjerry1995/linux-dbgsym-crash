@@ -33,6 +33,7 @@ RUN apt update && apt install -y --no-install-recommends \
     liblzo2-2 \
     libsnappy1v5 \
     libzstd1 \
+    libmpfr6 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /tmp/crash-bin /usr/local/bin/crash
