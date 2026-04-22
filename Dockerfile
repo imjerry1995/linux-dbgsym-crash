@@ -12,6 +12,7 @@ RUN apt update && apt install -y --no-install-recommends \
     texinfo \
     bison \
     libncurses-dev \
+    zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://github.com/crash-utility/crash/archive/refs/tags/9.0.1.tar.gz && \
